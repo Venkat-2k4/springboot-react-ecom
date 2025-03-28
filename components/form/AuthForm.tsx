@@ -65,7 +65,7 @@ const AuthForm =<T extends FieldValues> ({
       <div className="mt-2 text-lg text-black font-bold font-rounded-c ">
       {
         formType ==="signin"?
-        <p>Don&apost have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up</Link></p>:
+        <p>Don &apos t have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up</Link></p>:
         <p>Already have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signin">Sign In</Link></p>
         
       }

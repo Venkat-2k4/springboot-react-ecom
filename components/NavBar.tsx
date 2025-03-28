@@ -9,13 +9,13 @@ const NavBar = () => {
 
 
     <Link href="/" className=' justify-self-center font-varela-round text-4xl font-semibold '>ElectRound</Link>
-    <div className='max-md:place-self-start row-start-2 md:row-start-1 md:col-start-2 flex justify-around gap-8 px-8 items-center  font-varela-round rounded-4xl  h-16 bg-white'>
+    <div className='max-md:place-self-start row-start-2 md:row-start-1 md:col-start-2 flex justify-around gap-4 px-4 md:gap-8 md:px-8 items-center  font-varela-round rounded-4xl  h-16 bg-white'>
         <Link className='flex group' href="/">Laptops <Image src="/icons/down.svg" alt='icon' height={20} width={20}   className='group-hover:rotate-90'/></Link>
-        <Link className='flex  group' href="/">Mobiles <Image src="/icons/down.svg" alt='icon' height={20} width={20}  className='group-hover:rotate-90'/></Link>
-        <Link className='flex  group' href="/">Watches <Image src="/icons/down.svg" alt='icon' height={20} width={20}  className='group-hover:rotate-90'/></Link>
+        <Link className='flex    group' href="/">Mobiles <Image src="/icons/down.svg" alt='icon' height={20} width={20}  className='group-hover:rotate-90'/></Link>
+        <Link className='flex   group' href="/">Watches <Image src="/icons/down.svg" alt='icon' height={20} width={20}  className='group-hover:rotate-90'/></Link>
     </div>
         
-    <div className="col-start-2 max-md:row-start-2 lg:row-start-1 lg:col-start-3 justify-self-end flex max-lg:flex-col  gap-2">
+    <div className="col-start-2 max-sm:hidden max-md:row-start-2 lg:row-start-1 lg:col-start-3 justify-self-end flex max-lg:flex-col  gap-2">
         {
             navLinks.map((link , index)=>(
                 <div className="bg-black p-5  lg:rounded-b-4xl  max-lg:rounded-l-4xl" key={index}>

@@ -16,7 +16,7 @@ interface AuthFormProps<T extends FieldValues> {
 }
 
 
-const AuthForm = ({
+const AuthForm =<T extends FieldValues> ({
     Schema,
     defaultValues,
     onSubmit,
@@ -41,10 +41,10 @@ const AuthForm = ({
               <FormField 
                 key={field} 
                 control={form.control}
-                name={field}
+                name={field as keyof T}
                 render={({field})=>(
                   <FormItem>
-                    <FormLabel className='text-4xl capitalize' >{field.name}</FormLabel>
+                    <FormLabel className='text-4xl capitalize' >{field.value}</FormLabel>
                     <FormControl>
                       <Input  
                       className='  min-h-12 no-focus rounded-1.5  '

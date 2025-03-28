@@ -1,0 +1,22 @@
+export const navLinks = [
+    {
+        imgUrl:"/icons/account.svg",
+        route:"/signin",
+        alt:"navicon"
+    },
+    {
+        imgUrl:"/icons/moon.svg",
+        route:"/",
+        alt:"navicon"
+    },
+    {
+        imgUrl:"/icons/search.svg",
+        route:"/",
+        alt:"navicon"
+    },
+    {
+        imgUrl:"/icons/home.svg",
+        route:"/",
+        alt:"navicon"
+    },
+]

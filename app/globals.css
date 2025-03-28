@@ -1,13 +1,19 @@
 @import "tailwindcss";
 /* @import "tailwindcss/animate"; */
 
-
+@theme{
+  --font-varela-round : "varelaRound" , sans-serif;
+  --font-rounded-c :"roundedC", sans-serif;
+  --font-bowlby-sc: "bowlby" , san-serif;
+}
 @custom-variant dark (&:is(.dark *));
+
+.primary-gradient {
+  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+}
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
@@ -37,6 +43,8 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
+  --background : oklch(1 0 0);
+  --foreground : oklch(0.145 0 0);
 }
 
 .dark {

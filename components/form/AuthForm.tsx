@@ -35,7 +35,7 @@ const AuthForm =<T extends FieldValues> ({
     };
       return (
     <Form {...form} >
-      <form onSubmit={form.handleSubmit(handleSubmit)} className='flex flex-col gap-7' >
+      <form onSubmit={form.handleSubmit(handleSubmit)} className='flex flex-col  max-sm:gap-4 gap-7'  >
         {
           Object.keys(defaultValues).map((field)=>(
               <FormField 
@@ -44,10 +44,10 @@ const AuthForm =<T extends FieldValues> ({
                 name={field as keyof T as Path<T>}
                 render={({field})=>(
                   <FormItem>
-                    <FormLabel className='text-4xl capitalize' >{field.value}</FormLabel>
+                    <FormLabel className='text-4xl capitalize' >{field.name}</FormLabel>
                     <FormControl>
                       <Input  
-                      className='  min-h-12 no-focus rounded-1.5  '
+                      className=' max-sm:min-h-6 min-h-12 no-focus rounded-1.5  '
                       type={field.name ==="password" ? "password" : "text"}
                       {...field} />
                     </FormControl>
@@ -65,7 +65,7 @@ const AuthForm =<T extends FieldValues> ({
       <div className="mt-2 text-lg text-black font-bold font-rounded-c ">
       {
         formType ==="signin"?
-        <p>Don &apos t have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up</Link></p>:
+        <p>Don&apos;t have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up  </Link></p>:
         <p>Already have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signin">Sign In</Link></p>
         
       }

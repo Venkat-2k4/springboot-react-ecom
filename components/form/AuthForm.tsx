@@ -29,8 +29,11 @@ const AuthForm = ({
         defaultValues:defaultValues as DefaultValues<T>
 
     })
-    const handleSubmit:SubmitHandler<T> = async( )=>{console.log("submitted")}
-  return (
+    const handleSubmit: SubmitHandler<T> = async (data) => {
+      console.log("Form Submitted:", data); // Log the submitted form values
+      await onSubmit(data); // Call the passed onSubmit function
+    };
+      return (
     <Form {...form} >
       <form onSubmit={form.handleSubmit(handleSubmit)} className='flex flex-col gap-7' >
         {

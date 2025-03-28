@@ -29,7 +29,7 @@ const AuthForm = ({
         defaultValues:defaultValues as DefaultValues<T>
 
     })
-    const handleSubmit:SubmitHandler<T> = async( )=>{}
+    const handleSubmit:SubmitHandler<T> = async( )=>{console.log("submitted")}
   return (
     <Form {...form} >
       <form onSubmit={form.handleSubmit(handleSubmit)} className='flex flex-col gap-7' >
@@ -62,7 +62,7 @@ const AuthForm = ({
       <div className="mt-2 text-lg text-black font-bold font-rounded-c ">
       {
         formType ==="signin"?
-        <p>Don't have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up</Link></p>:
+        <p>Don&apost have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up</Link></p>:
         <p>Already have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signin">Sign In</Link></p>
         
       }

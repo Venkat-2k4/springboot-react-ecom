@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Varela_Round , M_PLUS_Rounded_1c,  Bowlby_One_SC} from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/auth/NavBar";
 
 
 const varelaRound = Varela_Round({

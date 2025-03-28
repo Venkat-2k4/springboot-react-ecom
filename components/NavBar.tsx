@@ -18,11 +18,11 @@ const NavBar = () => {
     <div className="col-start-2 max-sm:hidden max-md:row-start-2 lg:row-start-1 lg:col-start-3 justify-self-end flex max-lg:flex-col  gap-2">
         {
             navLinks.map((link , index)=>(
-                <div className="bg-black p-5  lg:rounded-b-4xl  max-lg:rounded-l-4xl" key={index}>
-                    <Link href={link.route}>
+                
+                    <Link href={link.route}  className="bg-black p-5  lg:rounded-b-4xl  max-lg:rounded-l-4xl" key={index}>
                         <Image className='fill-black' src={link.imgUrl} alt={link.alt} width={25} height={25}  />
                     </Link>
-                </div>
+                
             ))
         }
 

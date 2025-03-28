@@ -16,7 +16,7 @@ export default function Home() {
           <div className="w-15 h-5 bg-white rounded-full animate-bounce"></div> */}
         </div>
         <p className="font-rounded-c text-4xl">Refurbished Electronics at cheaper and best prices</p>
-        <h1 className="text-4xl md:text-8xl font-bowlby-sc">Shop Now</h1>
+        <h1 className="text-4xl md:text-8xl font-bowlby-sc">Shop  <span className="text-black"> Now</span></h1>
       </div>
     </div>
 

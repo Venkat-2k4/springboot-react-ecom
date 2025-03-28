@@ -44,7 +44,7 @@ const AuthForm =<T extends FieldValues> ({
                 name={field as keyof T as Path<T>}
                 render={({field})=>(
                   <FormItem>
-                    <FormLabel className='text-4xl capitalize' >{field.name}</FormLabel>
+                    <FormLabel className='text-xl  md:text-4xl capitalize' >{field.name}</FormLabel>
                     <FormControl>
                       <Input  
                       className=' max-sm:min-h-6 min-h-12 no-focus rounded-1.5  '
@@ -65,8 +65,8 @@ const AuthForm =<T extends FieldValues> ({
       <div className="mt-2 text-lg text-black font-bold font-rounded-c ">
       {
         formType ==="signin"?
-        <p>Don&apos;t have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signup">Sign Up  </Link></p>:
-        <p>Already have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight' href="/signin">Sign In</Link></p>
+        <p>Don&apos;t have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight max-sm:text-xs' href="/signup">Sign Up  </Link></p>:
+        <p>Already have an account <Link  className='font-xl text-white font-bowlby-sc font-extralight   max-sm:text-xs' href="/signin">Sign In</Link></p>
         
       }
       </div>

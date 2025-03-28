@@ -12,7 +12,9 @@ const varelaRound = Varela_Round({
 })
 const roundedC = M_PLUS_Rounded_1c({
   weight:["100" ,"900"] ,
-  variable:"--font-rounded-c"
+  variable:"--font-rounded-c",
+  display:"swap",
+  subsets: ["latin"],
 
 })
 

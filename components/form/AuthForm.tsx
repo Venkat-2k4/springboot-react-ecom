@@ -1,7 +1,7 @@
 "use client"
 import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
-import { DefaultValues, FieldValues, SubmitHandler, useForm } from 'react-hook-form'
+import { DefaultValues, FieldValues, Path, SubmitHandler, useForm } from 'react-hook-form'
 import { z, ZodSchema } from 'zod'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
@@ -41,7 +41,7 @@ const AuthForm =<T extends FieldValues> ({
               <FormField 
                 key={field} 
                 control={form.control}
-                name={field as keyof T}
+                name={field as keyof T as Path<T>}
                 render={({field})=>(
                   <FormItem>
                     <FormLabel className='text-4xl capitalize' >{field.value}</FormLabel>
